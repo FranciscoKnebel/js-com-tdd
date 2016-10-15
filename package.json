@@ -1,0 +1,23 @@
+{
+  "name": "javascript-com-tdd",
+  "version": "1.0.0",
+  "description": "JS com TDD na prática.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranciscoKnebel/js-com-tdd.git"
+  },
+  "keywords": [
+    "js",
+    "tdd"
+  ],
+  "author": "Francisco Knebel <franciscopaivaknebel@gmail.com> (https://github.com/franciscoknebel)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FranciscoKnebel/js-com-tdd/issues"
+  },
+  "homepage": "https://github.com/FranciscoKnebel/js-com-tdd#readme"
+}
