@@ -1,7 +1,7 @@
 {
-  "name": "js-com-tdd-testes",
+  "name": "js-com-tdd-fizzbuzz",
   "version": "1.0.0",
-  "description": "Parte de testes do curso JS com TDD.",
+  "description": "Fizzbuzz, curso JS com TDD.",
   "main": "index.js",
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/**/*.js tests/**/*.spec.js",
