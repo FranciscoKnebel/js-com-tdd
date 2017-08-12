@@ -21,6 +21,18 @@ module.exports = {
 		"strict": 0,
 		"no-console": 0,
 		"no-underscore-dangle": 0,
-		"mocha/no-exclusive-tests": "error"
-  }
+		"no-unused-expressions": 0,
+		"import/no-extraneous-dependencies": 0,
+		"no-unused-vars": [
+      "error",
+      {
+        "varsIgnorePattern": "should|expect"
+      }
+    ]
+  },
+	"globals": {
+		"describe": true,
+		"it": true,
+		"expect": true
+	}
 };

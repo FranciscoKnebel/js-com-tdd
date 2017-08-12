@@ -1,11 +1,64 @@
 const expect = require('chai').expect;
 
-describe('Main', () => {
-	describe('Method A', () => {
-		context('Case 1', () => {
-			it('should happen x', () => {
+const calc = require('../src/main');
 
-			});
+describe('Calc', () => {
+	// smoke tests
+	describe('Smoke tests', () => {
+		it('should exist the calc lib', () => {
+			expect(calc).to.exist;
+		});
+
+		it('should exist the method sum', () => {
+			expect(calc.sum).to.exist;
+			expect(calc.sum).to.be.a('function');
+		});
+
+		it('should exist the method sub', () => {
+			expect(calc.sub).to.exist;
+			expect(calc.sub).to.be.a('function');
+		});
+
+		it('should exist the method mult', () => {
+			expect(calc.mult).to.exist;
+			expect(calc.mult).to.be.a('function');
+		});
+
+		it('should exist the method div', () => {
+			expect(calc.div).to.exist;
+			expect(calc.div).to.be.a('function');
+		});
+	});
+
+	describe('Sum', () => {
+		it('should return 4 when sum(2,2)', () => {
+			expect(calc.sum(2, 2)).to.be.equal(4);
+		});
+	});
+
+	describe('Sub', () => {
+		it('should return 2 when sub(6,4)', () => {
+			expect(calc.sub(6, 4)).to.be.equal(2);
+		});
+
+		it('should return -2 when sub(4,6)', () => {
+			expect(calc.sub(4, 6)).to.be.equal(-2);
+		});
+	});
+
+	describe('Mult', () => {
+		it('should return 6 when mult(3,2)', () => {
+			expect(calc.mult(3, 2)).to.be.equal(6);
+		});
+	});
+
+	describe('Div', () => {
+		it('should return 3 when div(6,2)', () => {
+			expect(calc.div(6, 2)).to.be.equal(3);
+		});
+
+		it('should return the string `undefined` when divide by zero', () => {
+			expect(calc.div(6, 0)).to.be.equal('undefined');
 		});
 	});
 });
