@@ -38,4 +38,8 @@ describe('Main', () => {
 		expect(fizzBuzz(2)).to.equal(2);
 		expect(fizzBuzz(11)).to.equal(11);
 	});
+
+	it('should return the number when number is 0', () => {
+		expect(fizzBuzz(0)).to.equal(0);
+	});
 });
