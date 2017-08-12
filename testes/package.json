@@ -6,9 +6,9 @@
   "scripts": {
     "lint": "./node_modules/.bin/eslint src/**/*.js tests/**/*.spec.js",
     "prepush": "npm run lint",
-		"test": "./node_modules/.bin/mocha tests/**/*.spec.js",
-		"test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --watch",
-		"test:bail": "./node_modules/.bin/mocha tests/**/*.spec.js -- --bail"
+    "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
+    "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --watch --require babel-register",
+    "test:bail": "./node_modules/.bin/mocha tests/**/*.spec.js -- --bail --require babel-register"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,8 @@
   },
   "homepage": "https://github.com/FranciscoKnebel/js-com-tdd#readme",
   "devDependencies": {
+    "babel-preset-env": "^1.6.0",
+    "babel-register": "^6.24.1",
     "chai": "^4.1.1",
     "eslint": "^3.7.1",
     "eslint-config-airbnb": "^12.0.0",
